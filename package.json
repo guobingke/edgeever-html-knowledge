@@ -1,0 +1,27 @@
+{
+  "name": "edgeever-html",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "过冰客",
+  "description": "为 EdgeEver 补充单文件 HTML 预览与源码编辑。",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "check": "npm run coverage && npm run build && npm run test:e2e"
+  },
+  "dependencies": {
+    "@codemirror/lang-html": "^6.4.12",
+    "codemirror": "^6.0.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@vitest/coverage-v8": "^4.1.12",
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
+    "vitest": "^4.1.12"
+  }
+}

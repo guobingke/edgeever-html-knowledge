@@ -1,0 +1,13 @@
+{
+  "type": "plugin",
+  "id": "com.guobingke.html-tools",
+  "name": "HTML 预览与编辑",
+  "version": "0.1.0",
+  "apiVersion": "2",
+  "settingsUi": "host",
+  "author": "过冰客",
+  "description": "导入本地单文件 HTML，在现有笔记内默认预览，按需编辑源码。作者：过冰客。",
+  "entry": "./main.js",
+  "platforms": ["web", "desktop"],
+  "permissions": ["notes:read", "resources:read", "resources:write", "editor:read", "editor:write", "ui:commands", "ui:notices", "ui:panels", "ui:embeds", "storage"]
+}

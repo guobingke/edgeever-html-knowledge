@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HTML 预览与编辑 · 本地开发演示</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f8f7;color:#213b32;font:14px/1.6 system-ui,"Segoe UI",sans-serif}.host-header{height:64px;border-bottom:1px solid #dce5e0;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:#fff}.host-header span{font-size:12px;color:#64776e}.host-wrap{max-width:1100px;margin:32px auto;padding:0 20px}.host-intro{color:#64776e}.host-note{border:1px solid #dce5e0;border-radius:16px;background:#fff;padding:28px;min-height:450px;box-shadow:0 8px 30px #173b2205}.host-note>h1{font-size:25px;margin:0}.host-note>p{color:#6c7e75}.host-note .ht-embed{margin-top:20px}.host-header button,.host-close,.host-confirm button{padding:9px 14px;border:1px solid #b6cfc2;border-radius:8px;background:#fff;color:#235e45;cursor:pointer;font:inherit}.host-panel{position:fixed;inset:20px;background:#fff;border:1px solid #c9d8d0;border-radius:14px;box-shadow:0 10px 80px #102d3440;z-index:10;display:flex;flex-direction:column;overflow:hidden}.host-panel-header{display:flex;align-items:center;gap:20px;padding:10px 16px;border-bottom:1px solid #dce5e0}.host-panel-header strong{flex:1}.host-panel-content{flex:1;min-height:0;padding:10px}.host-notice{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:30;background:#163f30;color:#fff;padding:10px 18px;border-radius:9px;max-width:90vw;white-space:pre-wrap}.host-notice:empty{display:none}.host-confirm{position:fixed;inset:0;background:#1236;display:grid;place-items:center;z-index:40}.host-confirm>div{background:#fff;padding:26px;border-radius:12px;max-width:520px}.host-confirm button{margin:8px 8px 0 0}.host-boot-error{white-space:pre-wrap;color:#9f3423}
+</style></head>
+<body>
+<header class="host-header"><div><strong>EdgeEver 插件 · 开发演示</strong><br><span>模拟宿主，不会连接账户或云端</span></div><nav id="host-commands"></nav></header>
+<main class="host-wrap"><p class="host-intro">这是已有笔记中的 HTML 补充功能，不是独立知识库。单文件 HTML 导入后直接预览，点击按钮再编辑源码。</p><article class="host-note"><h1>我的普通笔记</h1><p>原有笔记内容保持不变，HTML 会插入在下方。</p><div id="host-embeds"></div></article></main>
+<div class="host-notice" role="status"></div><script type="module" src="./host.js"></script>
+</body></html>

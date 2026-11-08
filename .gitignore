@@ -1,0 +1,13 @@
+node_modules/
+coverage/
+test-results/
+playwright-report/
+releases/
+docs/*-verification.txt
+docs/checksums.txt
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db

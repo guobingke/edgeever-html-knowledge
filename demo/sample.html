@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一页 HTML，也可以很有用</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; background: #f6faf7; color: #203b32; font: 14px/1.6 system-ui, sans-serif; }
+    main { max-width: 800px; margin: auto; }
+    .eyebrow { color: #5e8b77; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+    h1 { margin: 10px 0; font-size: clamp(24px, 4vw, 32px); line-height: 1.35; letter-spacing: -.04em; }
+    .intro { color: #6d8276; margin-bottom: 20px; }
+    .row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .card { background: #fff; border: 1px solid #dfebe2; border-radius: 14px; padding: 14px 18px; flex: 1; min-width: 150px; }
+    .card b { display: block; color: #1a6e4d; font-size: 23px; }
+    .card span { font-size: 12px; color: #7a8e82; }
+    .interactive { margin-top: 14px; padding: 16px; border-radius: 14px; background: #e9f2eb; }
+    .interactive p { margin: 0 0 12px; }
+    button { background: #267654; color: #fff; border: 0; border-radius: 8px; padding: 9px 16px; font: inherit; cursor: pointer; }
+    button:hover { background: #155b3e; }
+    output { margin-left: 14px; font-weight: 600; }
+    footer { margin-top: 14px; color: #88a090; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">HTML PREVIEW & EDIT · SINGLE FILE</div>
+    <h1>一页 HTML，也可以很有用。</h1>
+    <p class="intro">把本地资料放进现有笔记，保留原来的排版与交互。需要修改时，再打开源码编辑。</p>
+    <div class="row">
+      <div class="card"><b>01</b><span>导入本地单文件 HTML</span></div>
+      <div class="card"><b>02</b><span>打开就是页面预览</span></div>
+      <div class="card"><b>03</b><span>按需编辑，保留原件</span></div>
+    </div>
+    <section class="interactive">
+      <p>这里的 JavaScript 在隔离预览中运行。试试下面的按钮：</p>
+      <button id="button">点亮一个灵感</button><output id="count">0 个灵感</output>
+    </section>
+    <footer>HTML 预览与编辑 · 作者：过冰客 · 示例页面无需联网</footer>
+  </main>
+  <script>
+    let count = 0;
+    document.querySelector('#button').addEventListener('click', () => {
+      count += 1;
+      document.querySelector('#count').textContent = count + ' 个灵感';
+    });
+  </script>
+</body>
+</html>
