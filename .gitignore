@@ -2,7 +2,7 @@ node_modules/
 coverage/
 test-results/
 playwright-report/
-releases/
+/releases/
 docs/*-verification.txt
 docs/checksums.txt
 .env

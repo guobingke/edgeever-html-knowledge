@@ -29,7 +29,19 @@
 
 ![源码编辑与分屏预览](docs/screenshots/editor.png)
 
-## 通过 Manifest 安装
+## 通过 GitHub Release 安装
+
+[v0.1.0 正式版](https://github.com/guobingke/edgeever-html-knowledge/releases/tag/v0.1.0) 已发布，附有宿主要求的独立 `manifest.json` 和 `main.js`。
+
+在 EdgeEver 插件市场的 GitHub 安装入口输入仓库地址：
+
+```text
+https://github.com/guobingke/edgeever-html-knowledge
+```
+
+若遇到 `GitHub release request failed with HTTP 403` 或 HTTP 429，可能是 GitHub API 限流；发布 Release 不会重置调用方额度。请改用下面的直接 Manifest 地址。
+
+## 通过 Manifest 安装（遇到限流时优先）
 
 在 EdgeEver 插件市场的 Manifest 安装入口输入：
 
@@ -39,7 +51,7 @@ https://raw.githubusercontent.com/guobingke/edgeever-html-knowledge/main/dist/ma
 
 确认作者 **过冰客** 和能力声明后启用插件。此地址使用仓库中已构建的 `dist/main.js`，无需先在本机安装 Node.js。
 
-注意：宿主的 **GitHub 仓库地址安装** 是另一种分发方式，要求匹配版本的 GitHub Release 和 `manifest.json` / `main.js` 资产。在发布 Release 之前，请使用上面的 **Manifest 地址**，不要把仓库主页当成已经可用的 Release 安装入口。真实宿主的安装与同步仍待实机验收。
+此方式直接下载已构建文件，不经过 GitHub Release 元数据查询。真实宿主的安装与同步仍待实机验收。
 
 ## 本地试用 / 安装
 
